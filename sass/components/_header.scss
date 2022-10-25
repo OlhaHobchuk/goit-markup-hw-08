@@ -1,0 +1,11 @@
+.header {
+    border-bottom: 1px solid $header-border-bootom;
+
+    &__container {
+        
+    display: flex;
+    align-items: center;
+
+    @extend %container;
+}
+}

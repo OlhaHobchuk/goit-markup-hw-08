@@ -1,0 +1,42 @@
+.location {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+
+    color: $primary-white-color;
+}
+
+.contacts {
+    @extend %list;
+}
+
+.contacts__item {
+    margin-top: 9px;
+    margin-bottom: 9px;
+
+&:last-child {
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+}
+
+
+.contacts__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+
+    color: $secondary-white-color;
+    @extend %link;
+
+    transition: color 250ms $main-timing-function;
+
+
+&:hover,
+&:focus {
+    color: $accent-color;
+}
+
+}

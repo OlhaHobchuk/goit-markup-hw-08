@@ -1,0 +1,68 @@
+.hero {
+
+    @extend %section;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    background-color: $footer-background-color;
+
+
+&__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+}}
+
+.hero__button {
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 216px;
+
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+
+    color: $primary-white-color;
+    background-color: $accent-color;
+    border-color: transparent;
+
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: color 250ms $main-timing-function, background-color 250ms $main-timing-function, border-color 250ms $main-timing-function;
+    ;
+
+&:hover,
+&:focus {
+    color: $primary-white-color;
+    background-color: $primary-button-hover-color;
+    border-color: $primary-button-hover-color;
+}
+
+}
+

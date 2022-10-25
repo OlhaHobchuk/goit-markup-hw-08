@@ -1,0 +1,92 @@
+.form-field {
+    margin-bottom: 10px;
+
+&__label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+
+        letter-spacing: 0.01em;
+
+        color: $primary-text-color;
+    }
+
+&__input-wrapper {
+    position: relative;
+}
+
+&__comment {
+    margin-bottom: 20px;
+}
+}
+
+.form-field__input {
+    width: 100%;
+    height: 40px;
+
+    padding: 11px 8px 11px 40px;
+    margin-top: 4px;
+
+    border: 1px solid $modal-form-input;
+    border-radius: 4px;
+
+    outline: none;
+
+    transition: border-color 250ms $main-timing-function;
+&:focus,
+&:hover
+    {
+    border: 1px solid $accent-color;
+}
+
+}
+
+
+.form-field__texrarea {
+    resize: none;
+    padding: 12px 16px;
+    margin-top: 4px;
+    width: 100%;
+    min-height: 120px;
+
+    border: 1px solid $modal-form-input;
+    border-radius: 4px;
+
+    outline: none;
+
+    transition: border-color 250ms $main-timing-function;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $accent-color;
+    }
+
+    &::placeholder {
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+
+        color: $placeholder-comment;
+    }
+}
+
+.form-field__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+
+    fill: $secondary-text-color;
+
+    transform: translateY(-50%);
+
+    transition: fill 250ms $main-timing-function;
+
+
+    .form-field__input:focus~&,
+    .form-field__input:hover~& {
+            fill: $accent-color;
+        }
+}
+

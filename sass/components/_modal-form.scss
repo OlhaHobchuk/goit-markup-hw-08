@@ -1,0 +1,18 @@
+.modal-form {
+    display: flex;
+    flex-direction: column;
+
+&__action {
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding: 0;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: $secondary-text-color;
+}   
+}
+

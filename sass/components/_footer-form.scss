@@ -1,0 +1,94 @@
+.footer-form {
+    margin-left: auto;
+
+&__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    text-transform: uppercase;
+    color: $primary-white-color;
+}
+}
+
+.submit-form {
+    display: flex;
+}
+
+.submit-form__mail-input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid $email-input-border-color;
+    border-radius: 4px;
+
+    background-color: transparent;
+
+    outline: none;
+
+    transition: border-color 250ms $main-timing-function;
+
+&:focus,
+&:hover {
+    border-color: $accent-color;
+    color: $secondary-white-color;
+}    
+
+&::placeholder {
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $secondary-white-color;
+}
+}
+
+
+.submit-form__button {
+    display: flex;
+    align-items: center;
+    padding: 10px 32px 10px 28px;
+
+    min-width: 200px;
+
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+
+    color: $primary-white-color;
+    background-color: $accent-color;
+    border-color: transparent;
+
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: color 250ms $main-timing-function, background-color 250ms $main-timing-function, border-color 250ms $main-timing-function;
+    
+
+&:hover,
+&:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    border-color: $accent-color;
+}
+
+&-icon {
+
+    fill: $primary-white-color;
+    margin-left: 8px;
+}
+
+}
+
