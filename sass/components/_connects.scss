@@ -1,0 +1,106 @@
+.connect-list {
+    @extend %list;
+
+@media screen and (min-width:480px) and (max-width:767px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 302px;
+}
+
+@media screen and (min-width:768px){
+    margin-left: auto;
+}
+
+@media screen and (min-width:1200px) {
+    display: flex;
+    margin-left: auto;
+}}
+
+ .connect-list__icon {
+
+@media screen and (min-width:480px) and (max-width:767px) {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    margin-right: 8px;
+    fill: currentColor;
+}
+
+@media screen and (min-width:1200px) {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}
+
+.connect-list__link {
+    @extend %link;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: $primary-text-color;
+
+    transition: color 250ms $main-timing-function;
+
+@media screen and (min-width: 480px) {
+    font-size: 24px;
+    line-height: 1.17;}
+
+@media screen and (min-width:768px) {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+}
+
+@media screen and (min-width:1200px) {
+display: flex;
+align-items: center;
+padding-top: 32px;
+padding-bottom: 32px;
+
+font-size: 14px;
+line-height: 1.14;}
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.connect-list__link--accented {
+    @media screen and (min-width:480px) and (max-width:767px){
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.78;
+            letter-spacing: 0.02em;
+        
+            color: $accent-color;
+    }
+}
+
+.connect-list__item {
+
+@media screen and (min-width:480px) and  (max-width:767px){
+    &+& {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+    &+& {
+            margin-top: 10px;
+        }
+}
+
+@media screen and (min-width:1200px) {
+    &+& {
+        margin-left: 50px;
+    }
+}
+}
+
+   
+
+
+

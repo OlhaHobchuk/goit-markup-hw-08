@@ -4,11 +4,17 @@
     background-color: $footer-background-color;
 
     &__container {
-    display: flex;
-    align-items: baseline;
-    
     @extend %container;
-
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 }
 

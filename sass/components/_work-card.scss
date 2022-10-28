@@ -1,54 +1,55 @@
 .work-card {
     @extend %link;
 
-&__image {
-    display: block;
-}
+    &__image {
+        display: block;
+    }
 
-&__wrapper {
-    position: relative;
+    &__wrapper {
+        position: relative;
 
-    overflow: hidden;
-}
+        overflow: hidden;
+    }
 
-&__overlay-description {
-    margin-top: 0;
-    margin-bottom: 0;
-    
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    
-    color: $primary-white-color;}
+    &__overlay-description {
+        margin-top: 0;
+        margin-bottom: 0;
 
-&__content {
-    padding: 20px 24px;
-    
-    border: 1px solid $card-border-color;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
 
-}
+        color: $primary-white-color;
+    }
+
+    &__content {
+        padding: 20px 24px;
+
+        border: 1px solid $card-border-color;
+
+    }
 
 
-&__title {
-    margin-top: 0;
-    margin-bottom: 4px;
+    &__title {
+        margin-top: 0;
+        margin-bottom: 4px;
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
 
-    color: $secondary-text-color;
+        color: $secondary-text-color;
 
-}
+    }
 
-&__description {
-    margin-top: 0;
+    &__description {
+        margin-top: 0;
         margin-bottom: 0;
         font-size: 16px;
         line-height: 1.88;
         color: $primary-text-color;
-}
+    }
 
 }
 
@@ -69,7 +70,6 @@
     transition: transform 250ms $main-timing-function;
 
     .work-card:hover & {
-    transform: translateY(0);
+        transform: translateY(0);
+    }
 }
-}
-

@@ -1,20 +1,8 @@
 .checkbox-field {
+    margin-top: 10px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-
-&__label {
-    display: flex;
-    align-items: center;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-
-    letter-spacing: 0.03em;
-
-    color: $primary-text-color;
-}
 
 &__conditions {
     color: $accent-color;
@@ -22,6 +10,26 @@
 
 &__input {
     @extend %visually-hidden;
+}
+}
+
+.checkbox-field__label {
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    letter-spacing: 0.03em;
+
+    color: $primary-text-color;
+
+@media screen and (min-width: 480px) {
+font-size: 12px;
+    line-height: 1.7;
+}
+
+@media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 }

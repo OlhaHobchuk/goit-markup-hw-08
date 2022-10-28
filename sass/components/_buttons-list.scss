@@ -11,16 +11,43 @@
 }
 
 .buttons-list {
-    margin-bottom: 34px;
+    
     display: flex;
     justify-content: center;
     @extend %list;
+
+@media screen and (min-width: 480px) {
+margin-bottom: 40px;
+flex-wrap: wrap;
+
+}
+
+@media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+    flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 1200px) {
+    margin-bottom: 34px;
+}
 }
 
 .buttons-list__item {
-    margin-right: 8px;
 
-    &:last-child {
+@media screen and (min-width:480px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width:480px) {
+    &:nth-last-child(-n + 2){
+    margin-bottom: 0;}
+}
+
+@media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+}
+&:last-child {
         margin-right: 0;
     }
 }

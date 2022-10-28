@@ -1,0 +1,41 @@
+.menu-container {
+@media screen and (min-width:480px) and (max-width: 767px){
+    position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        
+            padding: 48px 40px;
+            background-color: violet;
+            transform: translateX(100%);
+            transition: transform 250ms ease-in-out;}
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+
+    
+@media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+// .menu-container.is-open {
+//     transform: translateX(0);
+//                 }
+
+// .menu-container .menu-toggle {
+//     position: absolute;
+//     top: 16px;
+//     right: 16px;
+//     color: #fff;
+// }

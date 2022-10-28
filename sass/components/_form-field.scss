@@ -14,10 +14,6 @@
 &__input-wrapper {
     position: relative;
 }
-
-&__comment {
-    margin-bottom: 20px;
-}
 }
 
 .form-field__input {
@@ -64,12 +60,18 @@
     &::placeholder {
 
         font-weight: 400;
-        font-size: 12px;
-        line-height: 1.17;
         letter-spacing: 0.01em;
 
         color: $placeholder-comment;
+    
+    @media screen and (min-width: 480px) {
+        font-size: 14px;
+        line-height: 1.14;
     }
+    @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.17;
+}}
 }
 
 .form-field__icon {

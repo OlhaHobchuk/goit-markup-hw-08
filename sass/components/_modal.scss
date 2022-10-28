@@ -3,10 +3,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
-    width: 528px;
-    min-height: 581px;
-
     padding: 40px;
 
     background-color: $primary-background-color;
@@ -16,7 +12,13 @@
     transition: transform 500ms $main-timing-function;
 
     .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0.5);
-}
+    transform: translate(-50%, -50%) scale(0.5);}
 
+@media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
 }
+@media screen and (min-width: 1200px) {
+width: 528px;
+min-height: 581px;
+}}
