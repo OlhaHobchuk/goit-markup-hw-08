@@ -160,7 +160,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   min-height: 796px;
   padding: 48px 40px;
   background-color: #FFFFFF;
@@ -1444,6 +1444,7 @@ body {
 }
 
 .buttons-list {
+  margin-bottom: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1451,41 +1452,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 480px) {
-  .buttons-list {
-    margin-bottom: 40px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) {
-  .buttons-list {
-    margin-bottom: 14px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .buttons-list {
-    margin-bottom: 34px;
-  }
-}
 
-@media screen and (min-width: 480px) {
-  .buttons-list__item {
-    margin-right: 8px;
-    margin-bottom: 15px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .buttons-list__item:nth-last-child(-n+2) {
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .buttons-list__item {
-    margin-bottom: 0px;
-  }
+.buttons-list__item {
+  margin-right: 8px;
 }
 .buttons-list__item:last-child {
   margin-right: 0;
