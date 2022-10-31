@@ -1,0 +1,30 @@
+.menu-navigation {
+    @extend %list;
+
+    margin-bottom: 50px;
+}
+
+.menu-navigation__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.menu-navigation__link {
+  @extend %link;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    
+    color: $secondary-text-color;
+
+&--active {
+    color: $accent-color;
+}
+
+&:hover, &:focus {
+    color: $accent-color;
+}
+}
+

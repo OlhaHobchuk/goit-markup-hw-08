@@ -1,17 +1,30 @@
 .menu-toggle {
-    display: block;
-    margin-left: auto;
-    padding: 12px 8px;
-    min-width: 40px;
     min-height: 40px;
+    min-width: 40px;
+    display: block;
+       
+        margin-left: auto;
+        padding: 12px 8px;
+        background-color: transparent;
+        border-color: transparent;
+         border-radius: 50%;
+        cursor: pointer;
+       
+    @media screen and (min-width: 768px) {
+                display: none;
+            }}
 
-    background-color: transparent;
-    border-color: transparent;
-    border-radius: 4px;
+.menu-container__menu-toggle {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            color: $primary-white-color;
+        
 
-    cursor: pointer;
+    &:hover, &:focus {
+        color: $accent-color;
+    }}
 
-@media screen and (min-width:768px) {
-    display: none;
-}
-}
+
+
+

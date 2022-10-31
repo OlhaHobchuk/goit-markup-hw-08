@@ -1,0 +1,29 @@
+.menu-connect {
+    @extend %list;
+
+    margin-bottom: 15px;
+}
+
+
+.menu-connect__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+
+.menu-connect__link {
+@extend %link;
+
+font-weight: 500;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+
+color: $primary-text-color;
+
+&--accented {
+    font-size: 34px;
+    line-height: 1.18;
+    color: $accent-color;
+}}
