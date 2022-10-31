@@ -134,20 +134,34 @@ body {
 
 .menu-container__menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 10px;
+  right: 15px;
+  background-color: #FFFFFF;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.menu-toogle__close-button-icon {
+  fill: currentColor;
+}
+
 .menu-container__menu-toggle:hover, .menu-container__menu-toggle:focus {
   color: #2196F3;
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  min-height: 796px;
   padding: 48px 40px;
   background-color: #FFFFFF;
   z-index: 999;
@@ -315,7 +329,7 @@ body {
 }
 
 .menu-navigation {
-  margin-bottom: 50px;
+  margin-bottom: 302px;
 }
 
 .menu-navigation__item:not(:last-child) {
@@ -337,7 +351,7 @@ body {
 }
 
 .menu-connect {
-  margin-bottom: 15px;
+  margin-bottom: 65px;
 }
 
 .menu-connect__item:not(:last-child) {
