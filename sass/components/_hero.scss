@@ -19,7 +19,7 @@
         background-image: linear-gradient(to right, $hero-gradient, $hero-gradient), url(../images/header@2x.jpg);
     }
 }
-@media screen and (min-width:480px) {
+@media screen and (min-width:320px) {
     
     padding-top: 118px;
     padding-bottom: 118px;
@@ -69,7 +69,7 @@
 
     color: $primary-white-color;
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
     max-width: 360px;
     font-size: 26px;
         line-height: 1.62;
@@ -105,7 +105,7 @@
 
     transition: color 250ms $main-timing-function, background-color 250ms $main-timing-function, border-color 250ms $main-timing-function;
     ;
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
     padding: 10px 24px;
     min-width: 200px;
 }

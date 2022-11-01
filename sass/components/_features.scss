@@ -23,13 +23,13 @@
 
 .features__list {
     @extend %list;
+    margin: -15px;
 
 @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
-}
-}
+   
+}}
 
 .features__rectangle {
     margin-bottom: 30px;
@@ -38,17 +38,19 @@
 
     border-radius: 4px;
 
-@media screen and (min-width: 480px) {
-padding: 25px 190px;
-width: 450px;}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;}
     
 @media screen and (min-width: 768px) {
     padding: 25px 142px;
-    width: 354px;}
+    width: 100%;}
 
 @media screen and (min-width: 1200px) {                
 padding: 25px 100px;
-width: 270px;}
+width: 100%}
 }
 
 
@@ -64,24 +66,25 @@ width: 270px;}
     color: $secondary-text-color;
 
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     text-align: center;
 }
 }
 
 .features__item {
 
-@media screen and (min-width:480px) and (max-width:767px) {
-    width: 450px;
+@media screen and (min-width: 320px) and (max-width:767px) {
+    margin: 15px;
+    width: calc((100% - 2 * 15px) / 1);
     &:not(:last-child) {
     margin-bottom: 30px;
     }}
 
 @media screen and (min-width: 768px){
     margin: 15px;
-    width: 354px;
+    width: calc((100% - 4 * 15px) / 2);
 }
 
 @media screen and (min-width: 1200px) {
-    width: 270px;
+    width: calc((100% - 8 * 15px) / 4);
 }}

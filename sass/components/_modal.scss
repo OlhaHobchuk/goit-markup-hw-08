@@ -14,7 +14,7 @@
     .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.5);}
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
     width: 450px;
     min-height: 609px;
 }
