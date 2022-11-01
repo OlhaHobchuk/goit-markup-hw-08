@@ -2,7 +2,7 @@
     @extend %link;
 
     &__image {
-        display: block;
+        @extend %image;
     }
 
     &__wrapper {
@@ -22,36 +22,35 @@
         color: $primary-white-color;
     }
 
-    &__content {
-        padding: 20px 24px;
-
-        border: 1px solid $card-border-color;
-
-    }
 
 
-    &__title {
-        margin-top: 0;
-        margin-bottom: 4px;
-
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-
-        color: $secondary-text-color;
-
-    }
-
-    &__description {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 16px;
-        line-height: 1.88;
-        color: $primary-text-color;
-    }
+         &__title {
+             margin-top: 0;
+             margin-bottom: 4px;
+    
+             font-weight: 700;
+             font-size: 18px;
+             line-height: 2;
+             letter-spacing: 0.06em;
+    
+             color: $secondary-text-color;
+    
+         }
+    
+         &__description {
+             margin-top: 0;
+             margin-bottom: 0;
+             font-size: 16px;
+             line-height: 1.88;
+             color: $primary-text-color;
+         }
 
 }
+        .work-card__content {
+        border: 1px solid $card-border-color;
+        padding: 20px 24px;
+    }
+
 
 .work-card__overlay {
     position: absolute;
@@ -61,13 +60,24 @@
     width: 100%;
     height: 100%;
 
-    padding: 63px 24px;
-
     background-color: $work-card-overlay-background;
 
     transform: translateY(100%);
 
     transition: transform 250ms $main-timing-function;
+
+    @media screen and (min-width: 480px) {
+        padding: 77px 39px;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px 77px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 63px 24px;
+    }
 
     .work-card:hover & {
         transform: translateY(0);
