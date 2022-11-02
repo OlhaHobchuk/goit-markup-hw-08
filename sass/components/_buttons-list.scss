@@ -15,7 +15,7 @@
     margin: -4px;
     display: flex;
 
-    @media screen and (min-width:320px)  and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         flex-wrap: wrap;
         margin-bottom: 40px;
     }
@@ -26,7 +26,7 @@
          }
 
     @media screen and (min-width:1200px) {
-                    margin-bottom: 50px;
+            margin-bottom: 50px;
     
 }}
 

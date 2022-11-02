@@ -4,11 +4,9 @@
     margin-bottom: 302px;
 }
 
-.menu-navigation__item {
-    &:not(:last-child) {
+.menu-navigation__item:not(:last-child) {
         margin-bottom: 32px;
     }
-}
 
 .menu-navigation__link {
   @extend %link;

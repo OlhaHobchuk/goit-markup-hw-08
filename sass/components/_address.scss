@@ -6,7 +6,7 @@
 
     color: $primary-white-color;
 
-    @media screen and (min-width:320px) and (max-width: 1199px){
+    @media screen and (max-width: 1199px){
         text-align: center;
     }}
    
@@ -15,20 +15,14 @@
     @extend %list;
 }
 
-.contacts__item {
-
-@media screen and (min-width: 320px) {
-    &:not(:last-child){
+.contacts__item:not(:last-child){
     margin-top: 8px;
-    margin-bottom: 8px;}
-}
+    margin-bottom: 8px;
 
 @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
         margin-top: 9px;
         margin-bottom: 9px;
     }
-}
 }
 
 .contacts__link {

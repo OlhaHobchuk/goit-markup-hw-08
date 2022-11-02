@@ -5,11 +5,9 @@
 }
 
 
-.menu-connect__item {
-    &:not(:last-child) {
+.menu-connect__item:not(:last-child) {
         margin-bottom: 32px;
     }
-}
 
 
 .menu-connect__link {
@@ -20,10 +18,14 @@ font-size: 24px;
 line-height: 1.17;
 letter-spacing: 0.02em;
 
-color: $primary-text-color;
+color: $primary-text-color;}
 
-&--accented {
-    font-size: 34px;
+.menu-connect__link--accented {
+    font-size: 26px;
     line-height: 1.18;
     color: $accent-color;
-}}
+@media screen and (min-width: 480px) {
+    font-size: 34px;
+}
+
+}

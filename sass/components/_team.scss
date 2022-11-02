@@ -50,15 +50,12 @@
 
 .team__title {
     margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 700;
+    font-size: 28px;
     line-height: 1.17;
 
     color: $secondary-text-color;
-
-@media screen and (min-width: 320px) {
-    margin-bottom: 30px;
-    font-size: 28px;
-}
 
 @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
@@ -67,7 +64,7 @@
 
 .team__list {
  @extend %list;
-margin: -15px;
+ margin: -15px;
  
 @media screen and (min-width: 768px){
     display: flex;
@@ -78,10 +75,8 @@ margin: -15px;
 
 .team__card-body {
 
-@media screen and (min-width: 320px)  and (max-width: 479px) {
         padding-top: 24px;
         padding-bottom: 24px;
-    }
 
     @media screen and (min-width: 480px) {
             padding: 24px 122px;
@@ -95,14 +90,9 @@ margin: -15px;
 }
 
 
-
 .team__item {
     margin: 15px;
-
-@media screen and (min-width: 320px){
-    width: calc((100% - 2 * 15px) / 1); 
-    
-}
+    width: calc((100% - 2 * 15px) / 1);
 
 @media screen and (min-width: 768px){
     width: calc((100% - 4 * 15px) / 2);}
@@ -141,6 +131,3 @@ margin: -15px;
     color: $primary-white-color;
 }
 }
-
-
-

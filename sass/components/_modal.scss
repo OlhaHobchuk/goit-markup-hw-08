@@ -3,7 +3,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 40px;
+    width: calc(100% - 30px);
+    min-height: 609px;
+    padding: 20px;
 
     background-color: $primary-background-color;
 
@@ -11,14 +13,19 @@
 
     transition: transform 500ms $main-timing-function;
 
+
+@media screen and (min-width: 480px) {
+    width: 450px;
+    padding: 40px;}
+
+
+@media screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;}
+
+
     .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.5);}
+    
 
-@media screen and (min-width: 320px) {
-    width: 450px;
-    min-height: 609px;
 }
-@media screen and (min-width: 1200px) {
-width: 528px;
-min-height: 581px;
-}}

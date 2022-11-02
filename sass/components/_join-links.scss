@@ -1,16 +1,12 @@
 .join {
 
-@media screen and (min-width: 320px) and (max-width: 1199px){
+@media screen and (max-width: 1199px){
     text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     margin-top: 60px;
 }
-
-// @media screen and (min-width: 768px) {
-//     margin-left: auto;
-// }
 
 @media screen and (min-width: 1200px) {
     flex-direction: column;
