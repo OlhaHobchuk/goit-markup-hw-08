@@ -48,7 +48,7 @@
               <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
             </li>
             <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакти</a>
+              <a href="#contacts" class="site-nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -93,11 +93,13 @@
               >
             </li>
             <li class="menu-navigation__item">
-              <a href="" class="menu-navigation__link">Контакти</a>
+              <a href="#contacts-menu" class="menu-navigation__link"
+                >Контакти</a
+              >
             </li>
           </ul>
 
-          <ul class="menu-connect">
+          <ul class="menu-connect" id="contacts-menu">
             <li class="menu-connect__item">
               <a
                 href="tel:+380961111111"
@@ -208,6 +210,7 @@
           <ul class="proposition__list">
             <li class="proposition__item">
               <img
+                srcset="./images/розробка.jpg 1x, ./images/розробка2x.jpg 2x"
                 src="./images/розробка.jpg"
                 alt="Розробка"
                 width="370"
@@ -221,6 +224,10 @@
 
             <li class="proposition__item">
               <img
+                srcset="
+                  /images/мобільнізастосунки.jpg   1x,
+                  /images/мобільнізастосунки2x.jpg 2x
+                "
                 src="./images/мобільнізастосунки.jpg"
                 alt="Мобільні заствосунки"
                 width="370"
@@ -234,6 +241,7 @@
 
             <li class="proposition__item">
               <img
+                srcset="./images/вебдизайн.jpg 1x, ./images/вебдизайн2x.jpg 2x"
                 src="./images/вебдизайн.jpg"
                 alt="Вебдизайн"
                 width="370"
@@ -602,7 +610,10 @@
             м. Київ, пр-т Лесі Українки, 26
             <ul class="contacts">
               <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts__link"
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts__link"
+                  id="contacts"
                   >info@devstudio.com</a
                 >
               </li>
